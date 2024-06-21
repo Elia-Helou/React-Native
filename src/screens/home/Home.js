@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {Image, ScrollView, Text, TouchableOpacity, View} from 'react-native';
+import {ActivityIndicator, Image, ScrollView, Text, TouchableOpacity, View} from 'react-native';
 import {Rating} from 'react-native-ratings';
 import nativeImage from '../../assets/images/native.jpg';
 import sameImage from '../../assets/images/same.jpg';
@@ -61,8 +61,9 @@ const Home = ({navigation}) => {
   return (
     <ScrollView contentContainerStyle={styles.container}>
       <View style={[styles.textContainer, {marginTop: 0}]}>
+        {/* <ActivityIndicator></ActivityIndicator> */}
         <Text style={styles.title}>Book Category</Text>
-        <Text>See all</Text>
+        <Text>See all</Text> 
       </View>
       <View>
         <ScrollView

@@ -8,7 +8,9 @@ import BookDetails from './src/screens/bookDetails/BookDetails';
 import colors from './src/constants/colors';
 import BackHeader from './src/components/BackHeader/BackHeader';
 import CustomBookDetailsTabBar from './src/components/CustomBookDetails/CustomBookDetailsTabBar';
+import MyMap from './src/screens/MyMap/MyMap';
 
+ 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
 
@@ -17,6 +19,7 @@ const MainTabNavigator = () => {
     <Tab.Navigator>
       <Tab.Screen name="Home" component={Home} options={{headerShown: false}}/>
       <Tab.Screen name="Settings" component={SettingsScreen} />
+      <Tab.Screen name='Maps' component={MyMap} options={{headerShown: false}}/>
     </Tab.Navigator>
   );
 };
